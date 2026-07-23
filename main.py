@@ -129,15 +129,15 @@ def deposit():
         found=False
         
         user=int(input("ENTER ACCOUNT NUMBER"))
-        for depositing_amount in accounts:
-            if depositing_amount['ACCOUNT NUMBER']==user:
+        for existing_acc in accounts:
+            if existing_acc['ACCOUNT NUMBER']==user:
                 found=True
                 while True:
-                    amount=int(input("ENTER AMOUNT TO BE DEPOSITED"))
+                    amount=int(input("ENTER AMOUNT TO BE DEPOSITED: "))
                     if amount>0:
-                     depositing_amount['BALANCE']+=amount
+                     existing_acc['BALANCE']+=amount
                      print(f"Rs. {amount} DEPOSITED SUCCESSFULLY")
-                     print(f"NEW BALANCE IS Rs. {depositing_amount['BALANCE']}")
+                     print(f"NEW BALANCE IS Rs. {existing_acc['BALANCE']}")
                      break
                      
                     else:
@@ -148,6 +148,39 @@ def deposit():
             print("ACCOUNT NOT FOUND")   
     except ValueError:
         print("PLEASE ENTER VALID VALUE")
+
+# withdraw money function
+def withdraw():
+    try:
+        found=False
+            
+        user=int(input("ENTER ACCOUNT NUMBER"))
+        for existing_acc in accounts:
+            if existing_acc['ACCOUNT NUMBER']==user:
+                found=True
+                while True:
+                    amount=int(input("ENTER AMOUNT TO withdraw: "))
+                    if amount>0:
+                        if amount<=existing_acc['BALANCE']:
+                         existing_acc['BALANCE']-=amount
+                         print(f"Rs. {amount} withdrawn SUCCESSFULLY")
+                         print(f"NEW BALANCE IS Rs. {existing_acc['BALANCE']}")
+                         break
+                        else:
+                            print("INSUFFICIENT BALANCE")
+                            continue
+                    else:
+                        print("ENTER A VALID AMOUNT TO WITHDRAW") 
+                        continue
+                break             
+        if not found:
+            print("ACCOUNT NOT FOUND")   
+    except ValueError:
+        print("PLEASE ENTER VALID VALUE")
+        
+#
+    
+    
         
                   
         
