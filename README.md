@@ -8,7 +8,7 @@ This project is part of my Python learning journey and is being developed increm
 
 **Work in Progress**
 
-### Completed
+### Completed Features
 
 * Interactive banking menu
 * Continuous menu loop
@@ -17,12 +17,12 @@ This project is part of my Python learning journey and is being developed increm
 * Account creation
 * Duplicate account number validation
 * 7-digit account number validation
+* View All Accounts
 * Exit functionality
 * Modular program structure using functions
 
 ### Planned Features
 
-* View All Accounts
 * Search Account
 * Deposit Money
 * Withdraw Money
@@ -85,7 +85,7 @@ This project is being built to strengthen understanding of:
 * [x] Interactive menu
 * [x] Input validation
 * [x] Create Account
-* [ ] View All Accounts
+* [x] View All Accounts
 * [ ] Search Account
 * [ ] Deposit Money
 * [ ] Withdraw Money

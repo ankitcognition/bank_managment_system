@@ -56,7 +56,7 @@ def choice():
 choice()
 
 # create account function
-account=[]
+accounts=[]
 def create_acc():
     while True:
       try:
@@ -72,7 +72,7 @@ def create_acc():
          'ACCOUNT HOLDER':customer_name,
          'BALANCE':0
         }
-        for existing_acc in account:
+        for existing_acc in accounts:
          if existing_acc['ACCOUNT NUMBER']==acc_no:
             found=True
             break
@@ -81,12 +81,31 @@ def create_acc():
             print('ENTER DIFFERENT ACCOUNT NUMBER')
             continue
         else:
-          account.append(acc)
+          accounts.append(acc)
           print('ACCOUNT CREATED SUCCESSFULLY')
           break
       except ValueError:
           print("ENTER VALID VALUE")
           continue
+
+# view accounts function
+def view_acc():
+    if not accounts:
+            print("THERE ARE CURRENTLY NO ACCOUNTS IN SYSTEM")
+    else:
+        for acc in accounts:
+         print('='*35)
+         print(f"ACCOUNT NUMBER: {acc['ACCOUNT NUMBER']}")
+         print(f"ACCOUNT HOLDER'S NAME: {acc['ACCOUNT HOLDER']}")
+         print(f"ACCOUNT BALANCE: Rs. {acc['BALANCE']}")
+         print('='*35)
+        print(f"\nTOTAL ACCOUNTS: {len(accounts)}")
+
+         
+        
+            
+        
+   
           
         
             
