@@ -178,7 +178,22 @@ def withdraw():
     except ValueError:
         print("PLEASE ENTER VALID VALUE")
         
-#
+# view balance function
+def view_balance():
+    try:
+        found=False
+        user=int(input("ENTER ACCOUNT NUMBER: "))
+        for existing_acc in accounts:
+            if existing_acc["ACCOUNT NUMBER"]==user:
+                found=True
+                print(f"BALANCE IS Rs. {existing_acc['BALANCE']}")
+                break
+        if not found:
+            print("ACCOUNT NOT FOUND")
+    except ValueError:
+        print("ENTER VALID VALUE")
+    
+        
     
     
         

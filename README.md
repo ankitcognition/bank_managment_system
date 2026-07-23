@@ -21,12 +21,12 @@ This project is part of my Python learning journey and is being developed increm
 * Search Account
 * Deposit Money
 * Withdraw Money
+* Check Balance
 * Exit functionality
 * Modular program structure using functions
 
 ### Planned Features
 
-* Check Balance
 * Transfer Money
 * Delete Account
 * Improved input validation
@@ -89,7 +89,7 @@ This project is being built to strengthen understanding of:
 * [x] Search Account
 * [x] Deposit Money
 * [x] Withdraw Money
-* [ ] Check Balance
+* [x] Check Balance
 * [ ] Transfer Money
 * [ ] Delete Account
 * [ ] Final testing
