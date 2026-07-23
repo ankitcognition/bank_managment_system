@@ -104,9 +104,9 @@ def view_acc():
 # search account function
 def search_acc():
     try:
-        found=False
-        user=int(input("ENTER ACCOUNT NUMBER: "))
-        for existing_acc in accounts:
+         found=False
+         user=int(input("ENTER ACCOUNT NUMBER: "))
+         for existing_acc in accounts:
             if existing_acc['ACCOUNT NUMBER']==user:
                 found=True
                 print('='*35)
@@ -115,10 +115,43 @@ def search_acc():
                 print(f"ACCOUNT BALANCE: Rs. {existing_acc['BALANCE']}")
                 print('='*35)
                 break
-        if not found:
+         if not found:
             print("ACCOUNT NOT FOUND")
+
+            
     except ValueError:
         print("ENTER A VALID ACCOUNT NUMBER")
+
+
+# deposit money function
+def deposit():
+    try:
+        found=False
+        
+        user=int(input("ENTER ACCOUNT NUMBER"))
+        for depositing_amount in accounts:
+            if depositing_amount['ACCOUNT NUMBER']==user:
+                found=True
+                while True:
+                    amount=int(input("ENTER AMOUNT TO BE DEPOSITED"))
+                    if amount>0:
+                     depositing_amount['BALANCE']+=amount
+                     print(f"Rs. {amount} DEPOSITED SUCCESSFULLY")
+                     print(f"NEW BALANCE IS Rs. {depositing_amount['BALANCE']}")
+                     break
+                     
+                    else:
+                     print("ENTER A VALID AMOUNT TO DEPOSIT") 
+                     continue
+                break             
+        if not found:
+            print("ACCOUNT NOT FOUND")   
+    except ValueError:
+        print("PLEASE ENTER VALID VALUE")
+        
+                  
+        
+
     
         
         

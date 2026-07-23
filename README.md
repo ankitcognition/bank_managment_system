@@ -19,12 +19,12 @@ This project is part of my Python learning journey and is being developed increm
 * 7-digit account number validation
 * View All Accounts
 * Search Account
+* Deposit Money
 * Exit functionality
 * Modular program structure using functions
 
 ### Planned Features
 
-* Deposit Money
 * Withdraw Money
 * Check Balance
 * Transfer Money
@@ -87,7 +87,7 @@ This project is being built to strengthen understanding of:
 * [x] Create Account
 * [x] View All Accounts
 * [x] Search Account
-* [ ] Deposit Money
+* [x] Deposit Money
 * [ ] Withdraw Money
 * [ ] Check Balance
 * [ ] Transfer Money
