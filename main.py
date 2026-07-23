@@ -53,7 +53,42 @@ def choice():
         except ValueError:
             print("ENTER VALID NUMBER(1-9)")
             continue
-choice() 
+choice()
+
+# create account function
+account=[]
+def create_acc():
+    while True:
+      try:
+        acc_no=int(input('ENTER ACCOUNT NUMBER(7digits)'))
+        if len(str(acc_no))!=7:
+            print("ENTER ACCOUNT NUMBER WITH EXACTY 7 DIGITS")
+            continue
+        else:
+         customer_name=input("ENTER ACCOUNT HOLDER'S NAME").title()
+        found=False
+        acc={
+         'ACCOUNT NUMBER':acc_no,
+         'ACCOUNT HOLDER':customer_name,
+         'BALANCE':0
+        }
+        for existing_acc in account:
+         if existing_acc['ACCOUNT NUMBER']==acc_no:
+            found=True
+            break
+        if found:
+            print("ACCOUNT NUMBER ALREADY EXISTS")
+            print('ENTER DIFFERENT ACCOUNT NUMBER')
+            continue
+        else:
+          account.append(acc)
+          print('ACCOUNT CREATED SUCCESSFULLY')
+          break
+      except ValueError:
+          print("ENTER VALID VALUE")
+          continue
+          
+        
             
                 
                 
