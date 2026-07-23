@@ -101,6 +101,27 @@ def view_acc():
          print('='*35)
         print(f"\nTOTAL ACCOUNTS: {len(accounts)}")
 
+# search account function
+def search_acc():
+    try:
+        found=False
+        user=int(input("ENTER ACCOUNT NUMBER: "))
+        for existing_acc in accounts:
+            if existing_acc['ACCOUNT NUMBER']==user:
+                found=True
+                print('='*35)
+                print(f"ACCOUNT NUMBER: {existing_acc['ACCOUNT NUMBER']}")
+                print(f"ACCOUNT HOLDER'S NAME: {existing_acc['ACCOUNT HOLDER']}")
+                print(f"ACCOUNT BALANCE: Rs. {existing_acc['BALANCE']}")
+                print('='*35)
+                break
+        if not found:
+            print("ACCOUNT NOT FOUND")
+    except ValueError:
+        print("ENTER A VALID ACCOUNT NUMBER")
+    
+        
+        
          
         
             

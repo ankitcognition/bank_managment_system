@@ -18,12 +18,12 @@ This project is part of my Python learning journey and is being developed increm
 * Duplicate account number validation
 * 7-digit account number validation
 * View All Accounts
+* Search Account
 * Exit functionality
 * Modular program structure using functions
 
 ### Planned Features
 
-* Search Account
 * Deposit Money
 * Withdraw Money
 * Check Balance
@@ -86,7 +86,7 @@ This project is being built to strengthen understanding of:
 * [x] Input validation
 * [x] Create Account
 * [x] View All Accounts
-* [ ] Search Account
+* [x] Search Account
 * [ ] Deposit Money
 * [ ] Withdraw Money
 * [ ] Check Balance
