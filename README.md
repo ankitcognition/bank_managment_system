@@ -1,10 +1,12 @@
 # Banking Management System (Python)
 
-A console-based Banking Management System built using Python. This project is being developed step by step to practice core programming concepts such as functions, loops, dictionaries, lists, input validation, and real-world application design.
+A console-based Banking Management System built using Python.
+
+This project is part of my Python learning journey and is being developed incrementally to simulate real-world software development while improving programming and problem-solving skills.
 
 ## Current Status
 
- **Work in Progress**
+**Work in Progress**
 
 ### Completed
 
@@ -37,7 +39,7 @@ A console-based Banking Management System built using Python. This project is be
 ```text
 Banking-Management-System/
 │
-├── bank.py
+├── main.py
 └── README.md
 ```
 
@@ -58,7 +60,7 @@ cd Banking-Management-System
 3. Run the program.
 
 ```bash
-python bank.py
+python main.py
 ```
 
 ## Learning Objectives
@@ -67,11 +69,12 @@ This project is being built to strengthen understanding of:
 
 * Functions
 * Loops
-* Conditional statements
-* Exception handling
+* Conditional Statements
+* Exception Handling
 * Lists and Dictionaries
-* Menu-driven applications
-* Problem-solving and program design
+* Menu-Driven Applications
+* Problem Solving
+* Program Design
 
 ## Development Progress
 
@@ -89,6 +92,6 @@ This project is being built to strengthen understanding of:
 * [ ] Final testing
 * [ ] Documentation improvements
 
----
+## License
 
-This project is part of my Python learning journey and is being developed incrementally to simulate real-world software development while improving programming and problem-solving skills.
+This project is intended for learning and educational purposes.
