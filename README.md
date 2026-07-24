@@ -96,6 +96,7 @@ This project is being built to strengthen understanding of:
 * [x] Check Balance
 * [x] Transfer Money
 * [x] Delete Account
+* [x] Exit 
 * [ ] Final testing
 * [ ] Documentation improvements
 

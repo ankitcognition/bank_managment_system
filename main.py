@@ -46,25 +46,25 @@ def choice():
             elif user_input==9:
                 #exit function
                 program_exit()
+                break
             else:
                 print("SELECT VALID ACTION")
                 
         except ValueError:
             print("ENTER VALID NUMBER(1-9)")
             continue
-choice()
 
 # create account function
 accounts=[]
 def create_acc():
     while True:
       try:
-        acc_no=int(input('ENTER ACCOUNT NUMBER(7digits)'))
+        acc_no=int(input('ENTER ACCOUNT NUMBER(7digits): '))
         if len(str(acc_no))!=7:
-            print("ENTER ACCOUNT NUMBER WITH EXACTY 7 DIGITS")
+            print("ENTER ACCOUNT NUMBER WITH EXACTY 7 DIGITS: ")
             continue
         else:
-         customer_name=input("ENTER ACCOUNT HOLDER'S NAME").title()
+         customer_name=input("ENTER ACCOUNT HOLDER'S NAME: ").title()
         found=False
         acc={
          'ACCOUNT NUMBER':acc_no,
@@ -127,7 +127,7 @@ def deposit():
     try:
         found=False
         
-        user=int(input("ENTER ACCOUNT NUMBER"))
+        user=int(input("ENTER ACCOUNT NUMBER: "))
         for existing_acc in accounts:
             if existing_acc['ACCOUNT NUMBER']==user:
                 found=True
@@ -295,6 +295,8 @@ def delete_acc():
 def program_exit():
     print("THANKYOU FOR USING BANK MANAGMENT SYSTEM")
     print("="*35)
+
+choice()
     
                
     
