@@ -2,37 +2,34 @@
 
 A console-based Banking Management System built using Python.
 
-This project is part of my Python learning journey and is being developed incrementally to simulate real-world software development while improving programming and problem-solving skills.
+This project is part of my Python learning journey and was developed to strengthen my understanding of Python fundamentals by building a complete CRUD (Create, Read, Update, Delete) application. It simulates basic banking operations through a menu-driven interface while emphasizing clean code, modular programming, and input validation.
 
 ## Current Status
 
-**Core Banking System Completed**
+**Project Completed**
 
-### Completed Features
+## Features
 
-* Interactive banking menu
-* Continuous menu loop
-* User input handling
-* Input validation using `try` / `except`
-* Account creation
-* Duplicate account number validation
-* 7-digit account number validation
+* Create Bank Account
 * View All Accounts
 * Search Account
 * Deposit Money
 * Withdraw Money
-* Check Balance
+* View Balance
 * Transfer Money
 * Delete Account
-* Exit functionality
-* Modular program structure using functions
+* Menu-Driven Interface
+* Input Validation
+* Exception Handling
+* Duplicate Account Number Validation
+* 7-Digit Account Number Validation
 
-### Possible Improvements
+## Possible Improvements
 
 * Save account data using file handling
-* Add transaction history
+* Maintain transaction history
 * Improve input validation
-* Enhance user experience
+* Enhance user experience with a better interface
 
 ## Technologies Used
 
@@ -67,9 +64,37 @@ cd Banking-Management-System
 python main.py
 ```
 
+## Sample Menu
+
+```text
+=================================
+      BANKING MANAGEMENT SYSTEM
+=================================
+
+1. Create Account
+2. View All Accounts
+3. Search Account
+4. Deposit Money
+5. Withdraw Money
+6. View Balance
+7. Transfer Money
+8. Delete Account
+9. Exit
+```
+
+## Example Output
+
+```text
+ENTER ACCOUNT NUMBER: 1234567
+ENTER AMOUNT TO BE DEPOSITED: 500
+
+Rs. 500 DEPOSITED SUCCESSFULLY
+NEW BALANCE IS Rs. 3500
+```
+
 ## Learning Objectives
 
-This project is being built to strengthen understanding of:
+This project helped strengthen my understanding of:
 
 * Functions
 * Loops
@@ -77,8 +102,8 @@ This project is being built to strengthen understanding of:
 * Exception Handling
 * Lists
 * Dictionaries
-* Menu-Driven Applications
 * CRUD Operations
+* Menu-Driven Applications
 * Input Validation
 * Problem Solving
 * Program Design
@@ -93,12 +118,11 @@ This project is being built to strengthen understanding of:
 * [x] Search Account
 * [x] Deposit Money
 * [x] Withdraw Money
-* [x] Check Balance
+* [x] View Balance
 * [x] Transfer Money
 * [x] Delete Account
-* [x] Exit 
-* [ ] Final testing
-* [ ] Documentation improvements
+* [x] Final testing
+* [x] Project documentation
 
 ## License
 
