@@ -192,6 +192,74 @@ def view_balance():
             print("ACCOUNT NOT FOUND")
     except ValueError:
         print("ENTER VALID VALUE")
+        
+# transfer money function
+def money_transfer():
+    try:
+        found_sender=False
+        found_receiver=False
+        sender=int(input("ENTER SENDER'S ACCOUNT NUMBER"))
+        for sender_acc in accounts:
+            if sender_acc['ACCOUNT NUMBER']==sender:
+                found_sender=True            
+                print("SENDER'S ACCOUNT")
+                print('='*35)
+                print(f"ACCOUNT NUMBER: {sender_acc['ACCOUNT NUMBER']}")
+                print(f"ACCOUNT HOLDER'S NAME: {sender_acc['ACCOUNT HOLDER']}")
+                print(f"ACCOUNT BALANCE: Rs. {sender_acc['BALANCE']}")
+                print('='*35)
+                break
+        if not found_sender:
+            print('ACCOUNT NOT FOUND')
+            return
+        receiver=int(input("ENTER RECIVER'S ACCOUNT NUMBER"))
+        if receiver==sender:
+            print("CANNOT TRANSFER TO THE SAME ACCOUNT")
+            return
+        for receiver_acc in accounts:
+            if receiver_acc['ACCOUNT NUMBER']==receiver:
+                found_receiver=True 
+                print("RECIVER'S ACCOUNT")
+                print('='*35)
+                print(f"ACCOUNT NUMBER: {receiver_acc['ACCOUNT NUMBER']}")
+                print(f"ACCOUNT HOLDER'S NAME: {receiver_acc['ACCOUNT HOLDER']}")
+                print(f"ACCOUNT BALANCE: Rs. {receiver_acc['BALANCE']}")
+                print('='*35)
+                break
+        if not found_receiver:
+            print("RECEIVER'S ACCOUNT NOT FOUND")
+            return
+    except ValueError:
+        print("ENTER VALID VALUE")
+    
+    while True:
+        try:
+            amount=int(input("ENTER AMOUNT: "))
+            if amount<=0:
+                print("ENTER A VALID AMOUNT")
+                continue
+            if amount>sender_acc['BALANCE']:
+                print("INSUFFICIENT BALANCE")
+                continue
+            else:
+                sender_acc['BALANCE']-=amount
+                receiver_acc['BALANCE']+=amount
+                print(f"Rs. {amount} TRANSFERRED SUCCESSFULLY")
+                print("="*35)
+                print(f"SENDER'S NEW BALANCE Rs. {sender_acc['BALANCE']}")
+                print(f"RECEIVER'S NEW BALANCE Rs. {receiver_acc['BALANCE']}")
+                print("="*35)
+                break
+        except ValueError:
+            print("ENTER A VALID AMOUNT")
+            
+                
+        
+    
+                
+        
+    
+
     
         
     

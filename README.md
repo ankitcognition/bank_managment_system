@@ -22,12 +22,12 @@ This project is part of my Python learning journey and is being developed increm
 * Deposit Money
 * Withdraw Money
 * Check Balance
+* Transfer Money
 * Exit functionality
 * Modular program structure using functions
 
 ### Planned Features
 
-* Transfer Money
 * Delete Account
 * Improved input validation
 * Enhanced user experience
@@ -76,6 +76,8 @@ This project is being built to strengthen understanding of:
 * Lists
 * Dictionaries
 * Menu-Driven Applications
+* CRUD Operations
+* Input Validation
 * Problem Solving
 * Program Design
 
@@ -90,7 +92,7 @@ This project is being built to strengthen understanding of:
 * [x] Deposit Money
 * [x] Withdraw Money
 * [x] Check Balance
-* [ ] Transfer Money
+* [x] Transfer Money
 * [ ] Delete Account
 * [ ] Final testing
 * [ ] Documentation improvements
