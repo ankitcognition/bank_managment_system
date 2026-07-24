@@ -6,7 +6,7 @@ This project is part of my Python learning journey and is being developed increm
 
 ## Current Status
 
-**Work in Progress**
+**Core Banking System Completed**
 
 ### Completed Features
 
@@ -23,14 +23,16 @@ This project is part of my Python learning journey and is being developed increm
 * Withdraw Money
 * Check Balance
 * Transfer Money
+* Delete Account
 * Exit functionality
 * Modular program structure using functions
 
-### Planned Features
+### Possible Improvements
 
-* Delete Account
-* Improved input validation
-* Enhanced user experience
+* Save account data using file handling
+* Add transaction history
+* Improve input validation
+* Enhance user experience
 
 ## Technologies Used
 
@@ -93,7 +95,7 @@ This project is being built to strengthen understanding of:
 * [x] Withdraw Money
 * [x] Check Balance
 * [x] Transfer Money
-* [ ] Delete Account
+* [x] Delete Account
 * [ ] Final testing
 * [ ] Documentation improvements
 

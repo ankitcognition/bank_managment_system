@@ -21,32 +21,31 @@ def choice():
             user_input=int(input("PLEASE SELECT YOUR ACTION FROM THE MENU(1-9): "))
             if user_input==1:
                 #create account function
-                print("Feature coming soon...")
+                create_acc()
             elif user_input==2:
                 #deposit money function
-                print("Feature coming soon...")
+                deposit()
             elif user_input==3:
                 #withdraw money function
-                print("Feature coming soon...")
+                withdraw()
             elif user_input==4:
                 #check balance function
-                print("Feature coming soon...")
+                view_balance()
             elif user_input==5:
                 #transfer money funtion
-                print("Feature coming soon...")
+                money_transfer()
             elif user_input==6:
                 #search account function
-                print("Feature coming soon...")
+                search_acc()
             elif user_input==7:
                 #delete account function
-                print("Feature coming soon...")
+                delete_acc()
             elif user_input==8:
                 #view all accounts function
-                print("Feature coming soon...")
+                view_acc()
             elif user_input==9:
                 #exit function
-                print("Feature coming soon...")
-                break
+                program_exit()
             else:
                 print("SELECT VALID ACTION")
                 
@@ -252,6 +251,59 @@ def money_transfer():
                 break
         except ValueError:
             print("ENTER A VALID AMOUNT")
+
+
+# account delete function
+def delete_acc():
+    try:
+        found=False
+        user=int(input("ENTER ACCOUNT NUMBER: "))
+        for existing_acc in accounts:
+            if existing_acc['ACCOUNT NUMBER']==user:
+                found=True
+                print('='*35)
+                print(f"ACCOUNT NUMBER: {existing_acc['ACCOUNT NUMBER']}")
+                print(f"ACCOUNT HOLDER'S NAME: {existing_acc['ACCOUNT HOLDER']}")
+                print(f"ACCOUNT BALANCE: Rs. {existing_acc['BALANCE']}")
+                print('='*35)
+                break
+        if not found:
+             print("ACCOUNT NOT FOUND")
+             return               
+    except ValueError:
+                print("ENTER A VALID ACCOUNT NUMBER")
+                return
+                
+    while True: 
+           confirmation=input("ARE YOU SURE YOU WANT TO DELETE THIS ACCOUNT? (Y/N): ").upper()
+           if len(confirmation)>1:
+             print("ENTER EXACTLY 'Y' OR 'N':")
+             continue
+           if confirmation == "Y":
+               accounts.remove(existing_acc)
+               print("ACCOUNT DELETED SUCCESSFULLY")
+               print(f"REMANING TOTAL ACCOUNTS: {len(accounts)}")
+               break
+           elif confirmation == "N":
+               print("ACCOUNT DELETION CANCELLED")
+               break
+           else:
+             print("ENTER EXACTLY 'Y' OR 'N'")
+             continue
+        
+# exit function
+def program_exit():
+    print("THANKYOU FOR USING BANK MANAGMENT SYSTEM")
+    print("="*35)
+    
+               
+    
+               
+               
+           
+        
+        
+        
             
                 
         
